@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="forms.css">
+    <title>formularios</title>
+</head>
+<body>
+    <form>
+        <h1>Cadastro de Evento</h1>
+
+        <label for="nome">Nome Completo</label>
+        <input type="text" id="nome" name="nome">
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email">
+
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha">
+
+        <label for="confirme-senha">Comfirme sua senha</label>
+        <input type="password" id="confirme-senha" name="confirme-senha">
+
+        <label for="genero">Gênero</label>
+        <select name="genero" id="genero">
+            <option value=""></option>
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="outro">Outro</option>
+        </select>
+        <br>
+
+        <label for="pais">País</label>
+        <select name="pais" id="pais">
+            <option value=""></option>
+            <option value="brasil">Brasil</option>
+            <option value="argentina">Argentina</option>
+            <option value="uruguai">Uruguai</option>
+        </select>
+        <br>
+        
+        <label for="estado">Estado</label>
+        <select name="estado" id="estado">
+            <option value=""></option>
+            <option value="rio-grande-do-sul">Rio grande do sul</option>
+            <option value="rio-de-janeiro">Rio de Janeiro</option>
+            <option value="são-paulo">São Paulo</option>
+        </select>
+        <br>
+
+        <label for="data-nascimento">Data de Nasciemnto</label>
+        <input type="date" id="data-nascimento" name="data-nascimento">
+
+        <fieldset>
+            <legend>Preferência de comunicação</legend>
+            <input type="checkbox" name="email-novidades" id="email-novidades" value="email-novidades">
+            <label for="email-novidades">Receber atualizações por email</label><br>
+
+            <input type="checkbox" id="sms-novidades" name="sms-novidades" value="sms-novidades">
+            <label for="sms-novidades">Receber atualizações por SMS</label>
+        </fieldset>
+
+        <label for="foto-perfil">Foto de Perfil</label>
+        <input type="file" name="foto-perfil" id="foto-perfil">
+
+        <button type="submit"></button>
+    </form>
+</body>
+</html>

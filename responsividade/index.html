@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade</title>
+</head>
+<style>
+    .container{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    header{
+        background-color: #333;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .box{
+        width: 30%;
+        padding: 20px;
+        background-color: aquamarine;
+        margin: 10px;
+        text-align: center;
+    }
+
+    @media (max-width: 768px) {
+        .box {
+            width: 45%;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .box {
+            width: 100%;
+        }
+    }
+</style>
+<body>
+    <header>
+        <h1>layout responsivo</h1>
+    </header>
+    <main class="container">
+        <div class="box">Caixa 1</div>
+        <div class="box">Caixa 2</div>
+        <div class="box">Caixa 3</div>        
+    </main>
+    <aside><p>sim</p></aside>
+</body>
+</html>

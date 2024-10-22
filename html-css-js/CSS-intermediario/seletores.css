@@ -1,0 +1,15 @@
+div p {
+    color:blue
+}
+
+ul > li {
+    list-style: none;
+}
+
+h1 + p{
+    margin-bottom: 10px;
+}
+
+h1 ~ p {
+    
+}

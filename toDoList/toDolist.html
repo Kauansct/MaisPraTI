@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="toDolist.css">
+</head>
+<body>
+    <nav class="navegador">
+        <ul>
+            <li><h3>To Do App</h3></li>
+            <li><a href="#">Main</a></li>
+            <li><a href="#">Manegement</a></li>
+        </ul>
+    </nav>
+
+    <form class="listaDeTarefas">
+        <h3>Register Task</h3>
+
+        <select name="year" id="year">
+            <option value="" disabled selected>Year</option>
+            <option value="2024">2024</option>                
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+        </select>
+
+        <select name="month" id="month">
+            <option value="" disabled selected>Month</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>                
+        </select>
+
+        <input id="day" type="text" placeholder="Day">
+
+        <select name="type" id="type">
+            <option value="" disabled selected>Type</option>
+            <option value="work">Work</option>
+            <option value="study">Study</option>                
+            <option value="other">Other</option>                
+        </select>
+
+        <input id="description" type="text" placeholder="Description">
+
+        <button id="save">Save</button>
+
+        <ul id="list">
+
+        </ul>
+
+        <script src="toDoList.js"></script>
+    </nav>
+</body>
+</html>

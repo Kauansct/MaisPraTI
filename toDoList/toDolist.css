@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navegador{
+    background-color: #aadbaa;
+    padding: 15px 0;
+    display: flex;
+    justify-content: flex-start;
+    box-shadow: 20px rgba(0, 0, 0, 4);
+}
+
+.navegador ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.navegador li{
+    margin: 0 15px;
+}
+
+.navegador li a{
+    text-decoration: none;
+    color: #1c334b;
+    letter-spacing: 1.2px;
+    font-size: 14px;
+    padding: 7px 15px;
+    border-radius: 9px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.navegador li h3{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navegador li a:hover{
+    background-color: #ddfae4;
+}
+
+/* referente a lista */
+.listaDeTarefas{
+    background-color: rgb(242, 253, 244);
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.2);
+    height: 20%;
+    padding: 5% 10%;
+}
+
+.listaDeTarefas h3{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px 10px;
+    letter-spacing: 1.3px;
+}
+
+.listaDeTarefas select, input{
+    border-radius: 5px;
+    margin: 10px 20px;
+    padding: 5px;
+    box-sizing: border-box;
+    border: none;
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.2);
+}
+
+#description {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+#day{
+    width: 12%;
+}
+
+.listaDeTarefas button{
+    border-radius: 5px;
+    margin: 10px 20px;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 15px;
+    background-color: #62a067;
+    border: none;
+    color: #fff;
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+
+.listaDeTarefas button:hover{
+    background-color: #51c95b;
+    cursor: pointer;
+}
+
+.task-item{
+    background-color: #b8e0b8;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 1%;
+    margin: 2%;
+}
+
+.remove-btn{
+    margin-left: 10px;
+    cursor: pointer;
+    color: #fff;
+    background-color: rgb(189, 52, 52);
+    padding: 0.5% 2%;
+    border-radius: 5px;
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    font-size: small;
+}
+
+.remove-btn:hover{
+    background-color: rgb(253, 72, 72);
+    cursor: pointer;
+}
